@@ -1,3 +1,3 @@
 function isEmpty(obj) {
-  return !Object.values(obj).length;
+  return !Object.keys(obj).length;
 }
