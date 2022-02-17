@@ -1,3 +1,7 @@
 function sumSalary(salaries) {
-  // ваш код...
+  return Object.values(salaries).reduce((sum, value) => {
+    return ((typeof value !== 'number') || ([Infinity, -Infinity, NaN].includes(value))) ?
+      sum :
+      sum + value;
+  }, 0);
 }
